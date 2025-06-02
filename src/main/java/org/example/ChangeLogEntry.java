@@ -20,9 +20,9 @@ public class ChangeLogEntry {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("Discarded record:").append(source).append('\n');
-    sb.append("Kept record:").append(kept).append('\n');
-    sb.append("Changed fields:\n");
+    sb.append("\nDiscarded record:\n").append(source).append('\n');
+    sb.append("\nKept record:\n").append(kept).append('\n');
+    sb.append("\nChanged fields:\n");
     fieldChanges.forEach((k, v) -> sb.append("  ").append(k).append(" : ")
             .append(v[0]).append("  ➜  ")
             .append(v[1]).append('\n'));
