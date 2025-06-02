@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eeead304-8e8a-4e4a-9b9b-a159ac24a6d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ChangeLogEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LeadDeduplicator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LeadWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LeadsDupeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +53,66 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.LeadsDupeTest">
+    <configuration name="LeadsDupeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DupeCheck" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LeadsDupeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeadsDupeTest.duplicateEmailChain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DupeCheck" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LeadsDupeTest" />
+      <option name="METHOD_NAME" value="duplicateEmailChain" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeadsDupeTest.duplicateEmail_uniqueId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DupeCheck" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LeadsDupeTest" />
+      <option name="METHOD_NAME" value="duplicateEmail_uniqueId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeadsDupeTest.sameDateDiffTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DupeCheck" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LeadsDupeTest" />
+      <option name="METHOD_NAME" value="sameDateDiffTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeadsDupeTest.timeStamps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DupeCheck" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LeadsDupeTest" />
+      <option name="METHOD_NAME" value="timeStamps" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LeadsDupeTest" />
+        <item itemvalue="JUnit.LeadsDupeTest.sameDateDiffTime" />
+        <item itemvalue="JUnit.LeadsDupeTest.timeStamps" />
+        <item itemvalue="JUnit.LeadsDupeTest.duplicateEmailChain" />
+        <item itemvalue="JUnit.LeadsDupeTest.duplicateEmail_uniqueId" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,7 +121,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748817577470</updated>
-      <workItem from="1748817578872" duration="620000" />
+      <workItem from="1748817578872" duration="4753000" />
     </task>
     <servers />
   </component>
