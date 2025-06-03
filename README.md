@@ -1,67 +1,33 @@
-## 🤖 DEDUPEINATOR
-Cleaning up messy lead data? Say hello to DEDUPEINATOR — your friendly lead-scrubbing sidekick!
+# DEDUPE CHECKER
 
-This tool zaps duplicate records by comparing id and email, keeping only the freshest one based on entryDate. No more worrying about cluttered, conflicting, or outdated leads — DEDUPEINATOR's got it covered.
+This tool helps clean up messy lead data by identifying duplicates based on matching id or email fields, and keeping only the most recent record using the entryDate. 
+It takes care of tricky edge cases like missing values, formatting issues, and invalid dates. 
+Along the way, it keeps a detailed log of everything it removes, giving you a clear view of what changed and why. 
+The end result is a clean, reliable dataset you can trust, along with a full audit trail for peace of mind.
+Instead of transitive duplicate logic we use direct duplicate logic only. 
+the leads.json file path is hard coded ans references the resources file in the progam , in order to use this for other files the path needs to be changed.
 
-It handles the hard stuff too:
+-----------------------
+There are a few assumptions made on the way, being:
+1. There is clean data provided meaning that ID and Email are in proper format
+2. Leads are only processed in the order they are given (as order matters)
+3. comparision between duplicates is made on ID first and then email
+4. JSON file is the only form of input
+5. Any Leads which have null or empty values for any property will be removed and put in a colum called removed leads in the log file
 
-- Missing values? 
+------------------------
 
-- Weird date formats? 
-
-- Tricky whitespace and case mismatches? 
-
-- Unicode look-alikes that trick the eye? 
-
-And it doesn’t just clean silently — it leaves a detailed audit trail so you always know what was removed and why.
-
-📝 Assumptions
-Here’s what DEDUPEINATOR expects:
-
-Input data is clean (IDs and emails are in a standard format)
-
-Order matters — leads are processed in the sequence they appear
-
-Deduplication compares by id first, then email
-
-Input must be a valid .json file
-
-Leads with missing or null values in any field are rejected and logged as invalid
-
-## How It Works
-Scans for duplicates using:
-
-Matching id
-
-Matching email (case-insensitive and trimmed)
-
-Keeps only the most recent entry based on entryDate
-
-Skips anything with null or empty fields (and logs them under "Removed Leads")
-
-Doesn’t use transitive logic — only direct duplicate matching is applied
-
-All output is logged in a friendly, readable format for audit or review
-
-
-## File Setup
-The path to leads.json is hardcoded to the program’s resource folder.
-Want to use your own file? Just update the path in Main.java.
-
-## Features at a Glance
-- Deduplicates using id and email
-
-- Keeps the latest record using entryDate
-
-- Handles all sorts of edge cases
-
-- Logs everything: changes, removals, and invalid entries
-
-- Outputs clean, deduplicated JSON
-
-- Comes with full JUnit test suite for validation
-
-- Time and space efficient: O(n)
-
-Ready to turn data chaos into clean, deduplicated bliss?
-DEDUPEINATOR is just a run away.
+Deduplicates leads based on:
+  - Matching `id`
+  - Matching `email` (case/whitespace insensitive)
+-  Compares using `entryDate` to retain the most recent record
+- Handles:
+  - Missing/null fields
+  - Invalid date formats
+  - Time zone offsets
+  - Unicode look-alikes, email casing, and formatting inconsistencies
+-  Generates:
+  - Deduplicated JSON
+  - Human-readable change log
+- Includes a full JUnit test suite
+- Time and Space complexity of the solution is O(n) where n is the number of leads
