@@ -65,7 +65,7 @@ Note: The leads.json file path is hard-coded and references the resources folder
 - `Main:`	Loads input, invokes deduplication, prints results, logs changes.
 
 -----------------------
-## Handels
+## Handles
 - Missing/null fields
 
 - Invalid date formats
