@@ -28,6 +28,6 @@ Deduplicates leads based on:
   - Unicode look-alikes, email casing, and formatting inconsistencies
 -  Generates:
   - Deduplicated JSON
-  - Human-readable change log
-- Includes a full JUnit test suite
+  - change logs
+- Includes a full JUnit tests
 - Time and Space complexity of the solution is O(n) where n is the number of leads
