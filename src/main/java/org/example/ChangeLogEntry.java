@@ -33,7 +33,7 @@ public class ChangeLogEntry {
     sb.append("\nKept record:\n").append(kept).append('\n');
     sb.append("\nChanged fields:\n");
     fieldChanges.forEach((k, v) -> sb.append("  ").append(k).append(" : ")
-            .append(v[0]).append("  ➜  ")
+            .append(v[0]).append("  ->  ")
             .append(v[1]).append('\n'));
     return sb.toString();
   }

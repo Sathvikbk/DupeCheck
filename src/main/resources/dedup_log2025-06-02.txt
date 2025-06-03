@@ -1,4 +1,4 @@
-===== DEDUPED JSON =====
+------- DEDUPED JSON ------- 
 {
   "leads" : [ {
     "email" : "bog@bar.com",
@@ -37,7 +37,7 @@
     "_id" : "jkj238238jdsnfsj23"
   } ]
 }
-===== CHANGE LOG =====
+------- CHANGE LOG ------- 
 
 Discarded record:
 Lead{id='jkj238238jdsnfsj23', email='foo@bar.com', firstName='John', lastName='Smith', address='123 Street St', entryDate=2014-05-07T17:30:20Z}
@@ -46,11 +46,11 @@ Kept record:
 Lead{id='jkj238238jdsnfsj23', email='coo@bar.com', firstName='Ted', lastName='Jones', address='456 Neat St', entryDate=2014-05-07T17:32:20Z}
 
 Changed fields:
-  email : foo@bar.com  ➜  coo@bar.com
-  firstName : John  ➜  Ted
-  lastName : Smith  ➜  Jones
-  address : 123 Street St  ➜  456 Neat St
-  entryDate : 2014-05-07T17:30:20Z  ➜  2014-05-07T17:32:20Z
+  email : foo@bar.com  ->  coo@bar.com
+  firstName : John  ->  Ted
+  lastName : Smith  ->  Jones
+  address : 123 Street St  ->  456 Neat St
+  entryDate : 2014-05-07T17:30:20Z  ->  2014-05-07T17:32:20Z
 -------------------------
 Discarded record:
 Lead{id='sel045238jdsnfsj23', email='foo@bar.com', firstName='John', lastName='Smith', address='123 Street St', entryDate=2014-05-07T17:32:20Z}
@@ -59,7 +59,7 @@ Kept record:
 Lead{id='qest38238jdsnfsj23', email='foo@bar.com', firstName='John', lastName='Smith', address='123 Street St', entryDate=2014-05-07T17:32:20Z}
 
 Changed fields:
-  _id : sel045238jdsnfsj23  ➜  qest38238jdsnfsj23
+  _id : sel045238jdsnfsj23  ->  qest38238jdsnfsj23
 -------------------------
 Discarded record:
 Lead{id='qest38238jdsnfsj23', email='foo@bar.com', firstName='John', lastName='Smith', address='123 Street St', entryDate=2014-05-07T17:32:20Z}
@@ -68,10 +68,10 @@ Kept record:
 Lead{id='wuj08238jdsnfsj23', email='foo@bar.com', firstName='Micah', lastName='Valmer', address='123 Street St', entryDate=2014-05-07T17:33:20Z}
 
 Changed fields:
-  _id : qest38238jdsnfsj23  ➜  wuj08238jdsnfsj23
-  firstName : John  ➜  Micah
-  lastName : Smith  ➜  Valmer
-  entryDate : 2014-05-07T17:32:20Z  ➜  2014-05-07T17:33:20Z
+  _id : qest38238jdsnfsj23  ->  wuj08238jdsnfsj23
+  firstName : John  ->  Micah
+  lastName : Smith  ->  Valmer
+  entryDate : 2014-05-07T17:32:20Z  ->  2014-05-07T17:33:20Z
 -------------------------
 Discarded record:
 Lead{id='edu45238jdsnfsj23', email='mae@bar.com', firstName='Ted', lastName='Masters', address='44 North Hampton St', entryDate=2014-05-07T17:31:20Z}
@@ -80,11 +80,11 @@ Kept record:
 Lead{id='belr28238jdsnfsj23', email='mae@bar.com', firstName='Tallulah', lastName='Smith', address='123 Water St', entryDate=2014-05-07T17:33:20Z}
 
 Changed fields:
-  _id : edu45238jdsnfsj23  ➜  belr28238jdsnfsj23
-  firstName : Ted  ➜  Tallulah
-  lastName : Masters  ➜  Smith
-  address : 44 North Hampton St  ➜  123 Water St
-  entryDate : 2014-05-07T17:31:20Z  ➜  2014-05-07T17:33:20Z
+  _id : edu45238jdsnfsj23  ->  belr28238jdsnfsj23
+  firstName : Ted  ->  Tallulah
+  lastName : Masters  ->  Smith
+  address : 44 North Hampton St  ->  123 Water St
+  entryDate : 2014-05-07T17:31:20Z  ->  2014-05-07T17:33:20Z
 -------------------------
 Discarded record:
 Lead{id='jkj238238jdsnfsj23', email='coo@bar.com', firstName='Ted', lastName='Jones', address='456 Neat St', entryDate=2014-05-07T17:32:20Z}
@@ -93,9 +93,9 @@ Kept record:
 Lead{id='jkj238238jdsnfsj23', email='bill@bar.com', firstName='John', lastName='Smith', address='888 Mayberry St', entryDate=2014-05-07T17:33:20Z}
 
 Changed fields:
-  email : coo@bar.com  ➜  bill@bar.com
-  firstName : Ted  ➜  John
-  lastName : Jones  ➜  Smith
-  address : 456 Neat St  ➜  888 Mayberry St
-  entryDate : 2014-05-07T17:32:20Z  ➜  2014-05-07T17:33:20Z
+  email : coo@bar.com  ->  bill@bar.com
+  firstName : Ted  ->  John
+  lastName : Jones  ->  Smith
+  address : 456 Neat St  ->  888 Mayberry St
+  entryDate : 2014-05-07T17:32:20Z  ->  2014-05-07T17:33:20Z
 -------------------------

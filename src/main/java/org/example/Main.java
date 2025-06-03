@@ -53,12 +53,12 @@ public class Main {
 
     LeadWrapper outWrapper = new LeadWrapper(result.getDeduped());
     String prettyJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(outWrapper);
-    System.out.println("===== DEDUPED JSON =====\n" + prettyJson);
+    System.out.println("------- DEDUPED JSON------- \n" + prettyJson);
 
     StringBuilder logBuilder = new StringBuilder();
-    logBuilder.append("===== DEDUPED JSON =====\n").append(prettyJson).append("");
-    logBuilder.append("\n===== CHANGE LOG =====\n");
-    System.out.println("\n===== CHANGE LOG =====\n");
+    logBuilder.append("------- DEDUPED JSON ------- \n").append(prettyJson).append("");
+    logBuilder.append("\n------- CHANGE LOG ------- \n");
+    System.out.println("\n------- CHANGE LOG ------- \n");
     result.getLog().forEach(entry -> {
       logBuilder.append(entry).append("-------------------------");
       System.out.print(entry + "---------------------------");
@@ -66,7 +66,7 @@ public class Main {
       System.out.println("-----------------------------");
     });
     if (!result.getInvalidLogs().isEmpty()){
-      logBuilder.append("\n====== INVALID LEADS ======\n");
+      logBuilder.append("\n------- INVALID LEADS --------\n");
       result.getInvalidLogs().forEach(System.out::println);
     }
     String timeStamp = LocalDateTime.now().format(DateTimeFormatter.ISO_DATE);
