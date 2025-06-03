@@ -50,21 +50,6 @@ Note: The leads.json file path is hard-coded and references the resources folder
 
 -----------------------
 
-## Performance
-**Time Complexity:** O(n)
-
-**Space Complexity:** O(n), where n is the number of leads
-
------------------------
-
-## Class	Description
-- `Lead:`	Data model for each lead with fields like `_id`, `email`, `entryDate`, etc.
-- `LeadWrapper:`	Wrapper for serializing/deserializing the input JSON list of leads.
-- `ChangeLogEntry:`	Captures detailed logs of what changed between discarded and retained leads.
-- `LeadDeduplicator:`	Core logic for identifying duplicates, validating records, and comparing entries.
-- `Main:`	Loads input, invokes deduplication, prints results, logs changes.
-
------------------------
 ## Handles
 - Missing/null fields
 
@@ -73,3 +58,22 @@ Note: The leads.json file path is hard-coded and references the resources folder
 - Time zone offsets
 
 - Unicode look-alikes, email casing, and formatting inconsistencies
+
+-----------------------
+
+## Performance
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(n), where n is the number of leads
+
+-----------------------
+
+## Class	Description
+- `Lead`:	Data model for each lead with fields like `_id`, `email`, `entryDate`, etc.
+- `LeadWrapper`:	Wrapper for serializing/deserializing the input JSON list of leads.
+- `ChangeLogEntry`:	Captures detailed logs of what changed between discarded and retained leads.
+- `LeadDeduplicator`:	Core logic for identifying duplicates, validating records, and comparing entries.
+- `Main`:	Loads input, invokes deduplication, prints results, logs changes.
+
+-----------------------
+
