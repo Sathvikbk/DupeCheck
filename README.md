@@ -1,4 +1,4 @@
-🤖 DEDUPEINATOR
+## 🤖 DEDUPEINATOR
 Cleaning up messy lead data? Say hello to DEDUPEINATOR — your friendly lead-scrubbing sidekick!
 
 This tool zaps duplicate records by comparing id and email, keeping only the freshest one based on entryDate. No more worrying about cluttered, conflicting, or outdated leads — DEDUPEINATOR's got it covered.
