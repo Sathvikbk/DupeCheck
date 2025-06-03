@@ -2,6 +2,10 @@ package org.example;
 
 import java.util.List;
 
+/**
+ * This wrapper class encapsulated a list of lead objects.
+ */
+
 public class LeadWrapper {
   private List<Lead> leads;
   public LeadWrapper() {}

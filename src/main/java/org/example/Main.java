@@ -13,9 +13,18 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+/**
+ * Reads a JSON file containing the Leads, deduplicates them, logs the changes outputs the result
+ * to the onsole and to the log file.
+ */
 public class Main {
+
+  /**
+   * Main method to execute the deduplication process.
+   * @throws Exception if file I/O or parsing fails.
+   */
   public static void main(String[] args) throws Exception {
-    String filePath = "/Users/sathvikbk/Downloads/leads.json";
+    String filePath = "/Users/sathvikbk/Documents/PDP/Lab/DupeCheck/src/main/resources/leads.json";
     File input = Paths.get(filePath).toFile();
 
     if(input.length() == 0){
@@ -30,6 +39,7 @@ public class Main {
     try {
       wrapper = mapper.readValue(input, LeadWrapper.class);
     } catch (JsonParseException e){
+      System.err.println("Bad JSON" + e.getMessage());
       return;
     }
 
@@ -63,6 +73,6 @@ public class Main {
     Path logPath = input.getParent() == null ? input.toPath().resolve("dedup_log" + timeStamp + ".txt"):
             input.getParentFile().toPath().resolve("dedup_log" + timeStamp + ".txt");
     Files.writeString(logPath, logBuilder.toString(), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
-    System.out.println("Logs written to:"+logPath.toAbsolutePath());
+    System.out.println("\nLogs written to:"+logPath.toAbsolutePath());
   }
 }

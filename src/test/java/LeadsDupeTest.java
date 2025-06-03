@@ -2,7 +2,6 @@ import org.example.Lead;
 import org.example.LeadDeduplicator;
 import org.junit.jupiter.api.Test;
 
-import java.time.DateTimeException;
 import java.time.Instant;
 import java.time.format.DateTimeParseException;
 import java.util.List;
@@ -11,6 +10,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * Test class that is used to test existing logic for deduplications and to see if it works
+ * for edge cases.
+ */
 public class LeadsDupeTest {
   private static Lead lead(String id, String email, String first, String last, String address, Instant entryTime) {
     return new Lead(id, email, first, last, address, entryTime);
@@ -125,7 +128,7 @@ public class LeadsDupeTest {
   }
 
   /**
-   * all uniqe records
+   * All unique records
    */
   @Test
   void uniqueRecords(){
@@ -259,7 +262,7 @@ public class LeadsDupeTest {
   }
 
   /**
-   * case sensitve email
+   * Case sensitve email
    */
   @Test
   void caseSensitive(){
