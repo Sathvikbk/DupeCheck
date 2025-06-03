@@ -5,7 +5,7 @@ This tool helps clean up messy lead data by identifying duplicates based on matc
 
 The end result is a clean, reliable dataset you can trust, along with a full audit trail.
 
-Instead of transitive duplicate logic, we use direct duplicate logic only—records are only compared directly based on id or email.
+Instead of transitive duplicate logic, we use direct duplicate logic only—records are only compared directly based on `_id` or `email`.
 
 Note: The leads.json file path is hard-coded and references the resources folder. To use a different input file, you'll need to update the path in Main.java.
 
